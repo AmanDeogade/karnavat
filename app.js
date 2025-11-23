@@ -101,9 +101,11 @@ passport.deserializeUser(User.deserializeUser());
 app.use((req, res, next) => {
     res.locals.success = req.flash("success");
     res.locals.error = req.flash("error");
-    res.locals.currUser = req.user;
+    res.locals.currUser = req.user || null;
+    res.locals.isAuthenticated = req.isAuthenticated ? req.isAuthenticated() : false;
     next();
 });
+
 
 // ✅ ROUTES GO BELOW SESSION/PASSPORT
 app.get("/", (req, res) => {
