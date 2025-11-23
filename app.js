@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 // Temporary hardcoded values for testing
-process.env.ATLASDB_URL = 'mongodb://localhost:27017/wanderlust';
+process.env.ATLASDB_URL = 'mongodb+srv://avideogade57:QbMI7qI0Qw96tXSb@cluster0.zezbudh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 process.env.CLOUD_NAME = 'dni5pw0wh';
 process.env.CLOUD_API_KEY = '633357282274388';
 process.env.CLOUD_API_SECRET = 'nyCOX-AyujWi_hit_KwQNV2Pxkg';
